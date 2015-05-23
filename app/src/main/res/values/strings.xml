@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MeArm Bluetooth App</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="grab_button">Grab</string>
+    <string name="release_button">Release</string>
+    <string name="rotate_left">Rotate Left</string>
+    <string name="rotate_right">Rotate Right</string>
+    <string name="move_forward">Move Forward</string>
+    <string name="move_back">Move Back</string>
+</resources>
