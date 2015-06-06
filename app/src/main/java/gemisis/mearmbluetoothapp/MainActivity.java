@@ -4,16 +4,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    BluetoothController bluetoothController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        bluetoothController = new BluetoothController(this);
+        bluetoothController.ConnectToArm();
     }
 
+    public void move_forward(View view)
+    {
+        bluetoothController.SendCommand(BluetoothController.Commands.MOVE_FORWARD);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
