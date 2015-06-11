@@ -111,22 +111,22 @@ public class BluetoothController {
             switch(command)
             {
                 case MOVE_FORWARD:
-                    data = ("forward:1\n").getBytes();
+                    data = ("mf1\n").getBytes();
                     break;
                 case MOVE_BACK:
-                    data = ("back:1\n").getBytes();
+                    data = ("mb1\n").getBytes();
                     break;
                 case ROTATE_LEFT:
-                    data = ("rleft:1\n").getBytes();
+                    data = ("rl1\n").getBytes();
                     break;
                 case ROTATE_RIGHT:
-                    data = ("rright:1\n").getBytes();
+                    data = ("rr1\n").getBytes();
                     break;
                 case GRAB:
-                    data = ("grab:1\n").getBytes();
+                    data = ("cg1\n").getBytes();
                     break;
                 case RELEASE:
-                    data = ("release:1\n").getBytes();
+                    data = ("cr1\n").getBytes();
                     break;
             }
             try
